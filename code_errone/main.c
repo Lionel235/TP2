@@ -1,9 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h> 
-#include "tableau.h"
+//#include "tableau.h"
 #include "io.h"
 #include "alea.h"
 #include "tri.h"
+#ifndef __TABLEAU_H__
+#define __TABLEAU_H__
+typedef struct 
+{
+	int* valeurs ;
+	int taille ;
+}tableau ;
+#endif
 
 tableau t; // tableau d'entiers avec sa taille
 
